@@ -11,8 +11,10 @@ loop = True
 while loop:
     style = open ( "style.txt", 'r' )
 
+    system ( "clear" )
     print ( "****************************************************" )
     print ( style.read () )
+    
     print ( "\n" )
     print ( "****************************************************\n\n" )
 
