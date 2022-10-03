@@ -2,7 +2,6 @@ from itertools import combinations, permutations
 from os import system
 from time import sleep
 
-file = open ( "comb.txt", 'w' )
 tab = []
 
 l = 0 # Taille des pw
@@ -18,6 +17,8 @@ while loop:
     print ( "****************************************************\n\n" )
 
     print ( "Ce logiciel a été créé et soumis par le créateur à la license Apache 2.0\n" )
+    print ( "N'hésiter pas à consulter: https://github.com/BREBION-Mathis/comb/blob/main/LICENSE.md\n\n" )
+
     eula = str ( input ( "Accepter (O/N): " ) )
 
     if eula.lower () == 'o':
@@ -50,6 +51,8 @@ choix = str ( input ( "1: Donner la liste de vos mots (séparé par des virgules
 output = choix.split ( ',' )
 
 tabOut = [ i for i in combinations ( output, l ) ]
+
+file = open ( "comb.txt", 'w' )
 
 for i in tabOut:
     tabPermute = []
