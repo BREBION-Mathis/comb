@@ -3,7 +3,6 @@ from os import system
 from time import sleep
 
 file = open ( "comb.txt", 'w' )
-style = open ( "style.txt", 'r' )
 tab = []
 
 l = 0 # Taille des pw
@@ -11,11 +10,27 @@ l = 0 # Taille des pw
 loop = True
 
 while loop:
-    print ( "*********************************************************\n" )
-    print ( style.read () )
-    print ( "*********************************************************\n\n" )
+    style = open ( "style.txt", 'r' )
 
-    print ( "Ce logiciel a été créé et soumis par l'utilisateur à la license Apache 2.0\n" )
+    print ( "****************************************************" )
+    print ( style.read () )
+    print ( "\n" )
+    print ( "****************************************************\n\n" )
+
+    print ( "Ce logiciel a été créé et soumis par le créateur à la license Apache 2.0\n" )
+    eula = str ( input ( "Accepter (O/N): " ) )
+
+    if eula.lower () == 'o':
+        loop = False
+
+    else:
+        system ( "clear" )
+        print ( "Vous devez accepter les termes d'utilisations du logiciel" )
+        sleep ( 5 )
+        system ( "clear" )
+        style.close ()
+
+loop = True
 
 while loop:
     system ( "clear" )
@@ -63,4 +78,3 @@ for i in tabOut:
 
 loop = False
 file.close ()
-style.close ()
