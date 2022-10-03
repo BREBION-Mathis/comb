@@ -16,7 +16,7 @@ while loop:
     print ( "\n" )
     print ( "****************************************************\n\n" )
 
-    print ( "Ce logiciel a été créé et soumis par le créateur à la license Apache 2.0\n" )
+    print ( "Ce logiciel a été créé et soumis par le créateur à la licence Apache 2.0\n" )
     print ( "N'hésiter pas à consulter: https://github.com/BREBION-Mathis/comb/blob/main/LICENSE.md\n\n" )
 
     eula = str ( input ( "Accepter (O/N): " ) )
