@@ -37,6 +37,8 @@ loop = True
 
 while loop:
     system ( "clear" )
+    print ( "Info: le nombre de mots données par la suite dot être suppérieur à la taille des pw\n" )
+
     l = int ( input ( "Donner la taille des mots de passe: " ) )
 
     if l <= 1:
