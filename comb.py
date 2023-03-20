@@ -15,12 +15,12 @@ while loop:
     print ( style.read () )
 
     print ( "\n" )
-    print ( "Info: le nombre de mots données par la suite dot être suppérieur à la taille des pw\n" )
+    print ( "The number of words given afterwards must be less than the size of the passwords\n" )
 
-    l = int ( input ( "Donner la taille des mots de passe: " ) )
+    l = int ( input ( "Give the size of the passwords: " ) )
 
     if l <= 1:
-        print ( "\n\nLa taille des mots de passe doit être suppérieur à 1" )
+        print ( "\n\nThe size of the passwords must be less than 1" )
         sleep ( 5 )
     else:
         loop = False
@@ -28,9 +28,9 @@ while loop:
 loop = True
 
 system ( "clear" )
-choix = str ( input ( "1: Donner la liste de vos mots (séparé par des virgules sans espaces): \n" ) )
+choice = str ( input ( "1: List your words (separated by commas without spaces): \n" ) )
 
-output = choix.split ( ',' )
+output = choice.split ( ',' )
 
 tabOut = [ i for i in combinations ( output, l ) ]
 
