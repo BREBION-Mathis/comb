@@ -6,37 +6,15 @@ tab = []
 
 l = 0 # Taille des pw
 
+style = open ( "style.txt", 'r' )
+
 loop = True
 
 while loop:
-    style = open ( "style.txt", 'r' )
-
     system ( "clear" )
-    print ( "****************************************************" )
     print ( style.read () )
-    
+
     print ( "\n" )
-    print ( "****************************************************\n\n" )
-
-    print ( "Ce logiciel a été créé et soumis par le créateur à la licence Apache 2.0\n" )
-    print ( "N'hésiter pas à consulter: https://github.com/BREBION-Mathis/comb/blob/main/LICENSE.md\n\n" )
-
-    eula = str ( input ( "Accepter (O/N): " ) )
-
-    if eula.lower () == 'o':
-        loop = False
-
-    else:
-        system ( "clear" )
-        print ( "Vous devez accepter les termes d'utilisations du logiciel" )
-        sleep ( 5 )
-        system ( "clear" )
-        style.close ()
-
-loop = True
-
-while loop:
-    system ( "clear" )
     print ( "Info: le nombre de mots données par la suite dot être suppérieur à la taille des pw\n" )
 
     l = int ( input ( "Donner la taille des mots de passe: " ) )
